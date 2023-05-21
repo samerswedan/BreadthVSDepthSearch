@@ -7,6 +7,24 @@ public class MazeUtils {
     // read the content of text file into a 2-dimensional array of strings
 // each row of the array is a line of the file
 // each column of the array is a word of the file
+
+    public int rows;
+    public int cols;
+
+    public static Cell[][] readMaze(String filename){
+        String[][] mazeArray = readMazeTextFile(filename);
+        Cell[][] maze = new Cell[mazeArray.length][mazeArray[0].length];
+        for (int i = 0; i < mazeArray.length; i++) {
+            for (int j = 0; j < mazeArray[0].length; j++) {
+                maze[i][j] = new Cell();
+                maze[i][j].row = i;
+                maze[i][j].col = j;
+                maze[i][j].type = mazeArray[i][j];
+                maze[i][j].visited = false;
+            }
+        }
+        return maze;
+    }
     public static String[][] readMazeTextFile(String fileName) {
         String[][] mazeArray = new String[0][];
         try {
@@ -35,6 +53,14 @@ public class MazeUtils {
         }
     }
 
+    public static void printMaze(Cell[][] maze) {
+        for (Cell[] cells : maze) {
+            for (Cell cell : cells) {
+                System.out.print(cell.type + " ");
+            }
+            System.out.println();
+        }
+    }
     // method that prints the symbol of the maze at a given position
     public static void printMazeCharAtPosition(String[][] mazeArray, int row, int col) {
         System.out.println(mazeArray[row][col]);
@@ -42,9 +68,10 @@ public class MazeUtils {
 
 
     public static void main(String[] args) {
-        String[][] mazeArray = readMazeTextFile("src/maze.txt");
-        printMaze(mazeArray);
-        printMazeCharAtPosition(mazeArray, 1, 8);
+        //String[][] mazeArray = readMazeTextFile("src/maze.txt");
+       // printMaze(mazeArray);
+        //printMazeCharAtPosition(mazeArray, 4, 3);
+        printMaze(readMaze("src/maze.txt"));
 
     }
 }
