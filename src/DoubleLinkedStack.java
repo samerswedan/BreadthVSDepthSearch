@@ -1,10 +1,5 @@
 /*
-CPSC 331 Assignment 2
-Samer Swedan 30098990
-
-This code is based on the code provided by Professor Jalal Kawash from D2L
-it has been modified to be a Double-Linked Stack
-
+Samer Swedan 
  */
 
 public class DoubleLinkedStack<Cell extends Comparable> {

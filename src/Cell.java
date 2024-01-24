@@ -1,6 +1,6 @@
 /*
-CPSC 331 Assignment 2
-Samer Swedan 30098990
+
+Samer Swedan 
  */
 public class Cell implements Comparable {
     int col; // the column of the cell

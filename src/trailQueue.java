@@ -1,12 +1,9 @@
 /*
-CPSC 331 Assignment 2
-Samer Swedan 30098990
-
+Samer Swedan 
  */
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
-
 
 // A queue to hold the trail of Cells traversed by the search algorithms
 public class trailQueue {

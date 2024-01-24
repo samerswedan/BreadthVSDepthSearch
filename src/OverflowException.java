@@ -2,7 +2,7 @@
 /**
  * Exception is thrown when a bounded structure is full
  *
- * @author Jalal Kawash
+ * 
  */
 public class OverflowException extends RuntimeException
 {

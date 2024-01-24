@@ -1,9 +1,8 @@
 /*
-CPSC 331 Assignment 2
-Samer Swedan 30098990
 
-This code is based on the code provided by Professor Jalal Kawash from D2L
-it has been modified to be a Circular Double-Linked Queue
+Samer Swedan 
+
+
 
  */
 
@@ -15,7 +14,7 @@ import java.util.NoSuchElementException;
  * Implementation is by contract and by reference
  *
  *
- * @author Jalal Kawash
+ * 
  */
 
 
